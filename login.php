@@ -3,7 +3,8 @@
 session_start();
 
 if(isset($_SESSION['use'])) {
-  header("Location: RUD.php");
+// 	IN HEADER LOCATION STARTS WITH SMALL l WHICH CAN AFFECT YOUR CODE LATER
+  header("location: RUD.php");
 } elseif(isset($_POST['submit'])) {
 //  echo $_POST['submit']; die;
   $username = $_POST['Username'];
